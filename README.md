@@ -10,7 +10,7 @@ Symbol maps and an example project will be coming soon.
 ## Credits
 - [Pirlo](https://twitter.com/0x1CAA9C5C) - Answering some of my questions regarding Splatoon's internals
 - [AboodXD](https://github.com/aboood40091) - sead headers, advice, inspiration
-- [Rambo6Glaz](https://github.com/EpicUsername12) - Project structure inspiration
+- [Rambo6Glaz](https://github.com/EpicUsername12) - Project structure inspiration, types.h
 - [Shadów](https://github.com/shadowninja108) - Documentation
 - [open-ead](https://github.com/open-ead/) - sead headers
 - [STUPID Modder](https://github.com/stupidestmodder) - sead headers, inspiration

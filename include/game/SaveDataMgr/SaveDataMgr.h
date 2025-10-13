@@ -4,11 +4,11 @@
 
 class SaveDataMgr {
   public:
-    virtual void vf0(); // Deleted
-    virtual void vf1(); // Deleted
+    virtual void vfC(); // Deleted
+    virtual void vf14(); // Deleted
     virtual void proc();
-    virtual void vf3(int a1); // If a1 == 2, call unk_21F8030
-    virtual void vf4();       // Nullsub
+    virtual void vf24(int a1); // If a1 == 2, call unk_21F8030
+    virtual void vf2C();       // Nullsub
     virtual int getSaveDataBufferPointer();
     virtual int getBufferSize();
     virtual int someGetSaveHashWrapper(); // Calls getSaveDataHash with the save

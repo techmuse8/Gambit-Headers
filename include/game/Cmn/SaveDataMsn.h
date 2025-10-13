@@ -22,8 +22,8 @@ class SaveDataMsn {
 
     virtual ~SaveDataMsn();
     virtual int getSaveData();
-    virtual void vf2(); // Deleted
-    virtual void vf3(); // Deleted
+    virtual void vf14(); // Deleted
+    virtual void vf1C(); // Deleted
 
     SaveDataMsn();
 
@@ -58,8 +58,8 @@ class SaveDataMsn::Body : public SaveDataMsn {
   public:
     ~Body() override;
     int getSaveData() override; // Returns a pointer to the SaveDataMsn buffer
-    void vf2() override;        // Deleted
-    void vf3() override;        // Deleted
+    void vf14() override;        // Deleted
+    void vf1C() override;        // Deleted
 
     Body();
 
@@ -83,7 +83,7 @@ class SaveDataMsn::Body : public SaveDataMsn {
     SaveDataMsnData mSaveDataMsn;
 };
 
-static_assert(sizeof(SaveDataMsn) == 0xC, "Cmn::SaveDataMsnData size mismatch");
+static_assert(sizeof(SaveDataMsn) == 0xC, "Cmn::SaveDataMsn size mismatch");
 static_assert(sizeof(SaveDataMsnData) == 0x448, "Cmn::SaveDataMsnData size mismatch");
 static_assert(sizeof(SaveDataMsn::Body) == 0x458, "Cmn::SaveDataMsn::Body size mismatch");
 } // namespace Cmn

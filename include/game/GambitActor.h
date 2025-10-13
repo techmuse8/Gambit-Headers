@@ -15,65 +15,65 @@ class GambitActor : public Cmn::Actor {
     // Size: 0x50
   public:
     // vtable is at 0x100000D8
-    void vf0(); // Deleted(?)
-    bool checkDerivedRuntimeTypeInfo(char* a2);
-    void vf2();
-    void load();
-    void vf4();
-    void onActivate();
-    void vf6();
-    void firstCalc();
-    void vf8();
-    void secondCalc();
-    void vf10();
-    void thirdCalc();
-    void fourthCalc();
-    void fifthCalc();
-    void vf14();
-    void vf15();
+    void vfC(); // Deleted(?)
+    bool checkDerivedRuntimeTypeInfo(char* a2) override;
+    void vf1C() override;
+    void load() override;
+    void vf2C() override;
+    void onActivate() override;
+    void vf3C() override;
+    void firstCalc() override;
+    void vf4C() override;
+    void secondCalc() override;
+    void vf5C() override;
+    void thirdCalc() override;
+    void fourthCalc() override;
+    void fifthCalc() override;
+    void vf7C() override;
+    void vf84() override;
     const char* getClassName() override;
-    int maybeMtx1() override;   // returns either this->_08 + 52 if _08 == 0 or 0, maybe Mtx related based on Splatoon 2 names and functionality?
-    int maybeMtx2() override;   // returns either this->_08 + 100 if _08 == 0 or 0, maybe Mtx related based on Splatoon 2 names functionality?
-    int vf19() override;        // calls maybeMtx1 if this->_subobject2 & 1 == 0 then returns checkDerivedRTTI
-    int vf20() override;        // returns checkDerivedRTTI if this->_subobject2 >> 1 & 1 == 0
-    int vf21() override;        // returns firstCalc if this->_subobject2 >> 2 & 1 == 0
-    int vf22();                 // returns secondCalc if this->_subobject2 >> 3 & 1 == 0
-    int vf23();                 // calls thirdCalc if this->_subobject2 >> 4 & 1 == 0
-    int vf24();                 // calls fourthCalc if this->_subobject2 >> 5 & 1 == 0
-    int vf25();                 // calls fifthCalc if this->_   subobject2 >> 6 & 1 == 0
-    int vf26();                 // ActorLoadChildHeap related
-    int vf27();                 // returns vf4
-    int vf28();                 // Calls onActivate, calls some virt function in _30, sets _38 to 0
-    int vf29();                 // Calls vf6, then unk_200055C
-    int vf30();                 // Calls 2884A48 with this_30 and 1, 205BE7C with _30, vf10, vf14, and sets some struct flag to 1
-    int vf31();                 // Calls vf15, does some other checks idk
-    void vf32();                // More virtfunc calls to list later
-    int vf33();                 // If _1C != 3, call vf32 then set _1C to 2
-    void vf34();                // Deleted
-    virtual const char* vf35(); // Returns getClassName
-    virtual int vf36();         // Returns vf35
-    virtual int vf37();         // ^
-    virtual void vf38();
-    virtual void vf39();
-    virtual void vf40();
-    virtual void vf41();
-    virtual int vf42();          // Returns 1
-    virtual int vf43();          // Returns 4
-    virtual int vf44(int unk);   // Calls unk_2884178(a1->_30, a2, a1->_08, 0), something with skeletal animations?
-    virtual void vf45(int* unk); // Comapres something in a struct unk is pointing to
-    virtual void vf46();
-    virtual void vf47();
-    virtual void vf48(); // Calls vf51
-    virtual void vf49(); // Calls vf52
-    virtual void vf50(); // Calls vf53
-    virtual void vf51();
-    virtual void vf52();
-    virtual void vf53();
-    virtual void vf54();
-    virtual void vf55();
-    virtual void vf56(); // Doc later
-    virtual int vf57();  // Returns 1
-    virtual int vf58();  // Returns 0
+    int maybeMtx1() override;    // returns either this->_08 + 52 if _08 == 0 or 0, maybe Mtx related based on Splatoon 2 names and functionality?
+    int maybeMtx2() override;    // returns either this->_08 + 100 if _08 == 0 or 0, maybe Mtx related based on Splatoon 2 names functionality?
+    int vfA4() override;         // calls maybeMtx1 if this->_subobject2 & 1 == 0 then returns checkDerivedRTTI
+    int vfAC() override;         // returns checkDerivedRTTI if this->_subobject2 >> 1 & 1 == 0
+    int vfB4() override;         // returns firstCalc if this->_subobject2 >> 2 & 1 == 0
+    int vfBC() override;         // returns secondCalc if this->_subobject2 >> 3 & 1 == 0
+    int vfC4() override;         // calls thirdCalc if this->_subobject2 >> 4 & 1 == 0
+    int vfCC() override;         // calls fourthCalc if this->_subobject2 >> 5 & 1 == 0
+    int vfD4() override;         // calls fifthCalc if this->_   subobject2 >> 6 & 1 == 0
+    int vfDC() override;         // ActorLoadChildHeap related
+    int vfF4() override;         // returns vf2C
+    int vfFC() override;         // Calls onActivate, calls some virt function in _30, sets _38 to 0
+    int vf104() override;        // Calls vf3C, then unk_200055C
+    int vf10C() override;        // Calls 2884A48 with this_30 and 1, 205BE7C with _30, vf5C, vf7C, and sets some struct flag to 1
+    int vf114() override;        // Calls vf84, does some other checks idk
+    void vf11C() override;       // More virtfunc calls to list later
+    int vf124() override;        // If _1C != 3, call vf114 then set _1C to 2
+    void vf12C() override;       // Deleted
+    virtual const char* vf134(); // Returns getClassName
+    virtual int vf13C();         // Returns vf134
+    virtual int vf144();         // ^
+    virtual void vf14C();
+    virtual void vf154();
+    virtual void vf15C();
+    virtual void vf164();
+    virtual int vf16C();          // Returns 1
+    virtual int vf174();          // Returns 4
+    virtual int vf17C(int unk);   // Calls unk_2884178(a1->_30, a2, a1->_08, 0), something with skeletal animations?
+    virtual void vf184(int* unk); // Comapres something in a struct unk is pointing to
+    virtual void vf18C();
+    virtual void vf194();
+    virtual void vf19C(); // Calls vf214
+    virtual void vf204(); // Calls vf21C
+    virtual void vf20C(); // Calls vf224
+    virtual void vf214();
+    virtual void vf224();
+    virtual void vf22C();
+    virtual void vf234();
+    virtual void vf23C();
+    virtual void vf244(); // Doc later
+    virtual int vf24C();  // Returns 1
+    virtual int vf254();  // Returns 0
 
     u32 _28;
     s32 _2C;

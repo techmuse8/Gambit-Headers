@@ -5,7 +5,7 @@
 namespace Cmn {
 namespace Def {
 
-    enum class Mode : u32 {
+    enum Mode {
         cVSGame         = 0x0,
         cMission        = 0x1,
         cPlaza          = 0x2,
@@ -24,6 +24,6 @@ namespace Def {
         cDbgSetting     = 0xF,
     };
 
-    static Mode getCurMode();
+    extern Mode getCurMode();
 } // namespace Def
 } // namespace Cmn

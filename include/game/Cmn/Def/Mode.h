@@ -25,5 +25,5 @@ namespace Def {
     };
 
     static Mode getCurMode();
-}
-}
+} // namespace Def
+} // namespace Cmn
